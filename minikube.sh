@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su
 
 echo "1st install docker"
 
