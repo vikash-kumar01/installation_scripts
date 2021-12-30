@@ -13,13 +13,13 @@ kubectl version --client
 
 echo "Now install Minikube"
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube -y
+sudo install minikube-linux-amd64 /usr/local/bin/minikube 
 
 echo "now install conntrack"
 apt install conntrack -y
 
 echo "Now start minikube"
-minikube start --vm-driver=none -y
+minikube start --vm-driver=none 
 
 echo "Directory works"
 sudo mv /root/.kube /root/.minikube $HOME
