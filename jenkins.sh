@@ -16,7 +16,7 @@ sudo apt update -y
 
 sudo add-apt-repository universe -y
 
-sudo apt-get install jenkins
+sudo apt-get install jenkins -y
 
 sudo service jenkins start
 
