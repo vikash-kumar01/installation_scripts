@@ -3,6 +3,7 @@
 echo "1st install docker"
 
 sudo apt update && apt -y install docker.io
+sudo chmod 666 /var/run/docker.sock
 
 echo "Apply updates"
 sudo apt update -y 
