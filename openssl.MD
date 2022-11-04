@@ -15,3 +15,5 @@
       aws acm import-certificate --certificate fileb://my-aws-public.crt --private-key fileb://my-aws-private.key --region us-east-1
       openssl pkcs12 -inkey my-aws-private.key -in my-aws-public.crt -export -out my-aws.p12	
       ```
+
+# https://medium.com/@chamilad/adding-a-self-signed-ssl-certificate-to-aws-acm-88a123a04301
