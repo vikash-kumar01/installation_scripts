@@ -13,3 +13,9 @@ tar xzf nexus-3.29.2-02-unix.tar.gz -C /opt/nexus --strip-components=1
 chown -R nexus:nexus /opt/nexus
 
 nano /opt/nexus/bin/nexus.vmoptions
+
+
+
+```
+https://www.howtoforge.com/how-to-install-and-configure-nexus-repository-manager-on-ubuntu-20-04/
+```
