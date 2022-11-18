@@ -1,8 +1,16 @@
 #!/bin/bash
 
+
+sudo apt-get update -y
+
+sudo apt-get install curl wget apt-transport-https virtualbox virtualbox-ext-pack -y
+
 echo "1st install docker"
 
 sudo apt update && apt -y install docker.io
+
+sudo systemctl start docker
+sudo systemctl enable docker
 sudo chmod 666 /var/run/docker.sock
 
 echo "Apply updates"
@@ -24,7 +32,7 @@ kubectl version -o yaml
 
 
 echo "Start the minikube"
-minikube start --driver=docker
+minikube start 
 minikube status
 
 
