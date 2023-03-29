@@ -144,3 +144,15 @@ kubectl apply -f phpadmin-pod.yaml
 ```
 kubectl expose pod  phpadmin-pod --type=NodePort --port=8099 --target-port=80 --name=phpadmin-svc
 ```
+
+# # PHP APP Configurations
+
+```
+kubectl run php-app --image=vikashashoke/phpapp
+```
+
+### EXPOSING 
+
+```
+kubectl expose pod php-app --type=NodePort --port=8088 --target-port=80 --name=phpapp-svc
+```
