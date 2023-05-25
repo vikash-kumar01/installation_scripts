@@ -19,3 +19,8 @@ nano /opt/nexus/bin/nexus.vmoptions
 ```
 https://www.howtoforge.com/how-to-install-and-configure-nexus-repository-manager-on-ubuntu-20-04/
 ```
+
+
+```
+docker run -d -p 8081:8081 --name nexus sonatype/nexus3
+```
